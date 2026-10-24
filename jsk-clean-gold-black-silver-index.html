@@ -1,0 +1,487 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="JSK CLEAN tissue products. Ask us about retail and bulk orders.">
+  <title>JSK CLEAN | Everyday Comfort, Thoughtfully Made</title>
+  <style>
+
+
+.footer-details {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  color: #C0C0C0;
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+
+
+.brand {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: #111111;
+  border: 1px solid #D4AF37;
+  border-radius: 12px;
+  padding: 1px 3px; /* Reduces space around logo */
+}
+
+.brand img {
+  display: block;
+  width: 150px;
+  height: 5px; /* Reduced from 55px */
+  object-fit: contain;
+  object-position: center;
+}
+.brand img {
+  display: block;
+  width: 180px;
+  height: 70px;
+  object-fit: contain;
+  object-position: left center;
+}
+    :root{
+      --ivory:#F1F1F1; --cream:#FFFFFF; --mocha:#C9A227;
+      --espresso:#101010; --copper:#D4AF37; --muted:#666666;
+      --line:#D7D7D7; --white:#fff; --silver:#C0C0C0;
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{margin:0;background:var(--cream);color:var(--espresso);font-family:Arial,Helvetica,sans-serif;line-height:1.6}
+    a{color:inherit;text-decoration:none}
+    .wrap{width:min(1140px,92%);margin:auto}
+    header{position:sticky;top:0;z-index:5;background:rgba(255,255,255,.96);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+    .nav{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:16px 0}
+    .brand{font-weight:900;font-size:1.4rem;letter-spacing:.08em;color:var(--espresso)}
+    .brand small{display:block;font-size:.58rem;letter-spacing:.25em;color:var(--muted);font-weight:700}
+    .links{display:flex;align-items:center;gap:24px;font-size:.92rem}
+    .btn{display:inline-flex;align-items:center;justify-content:center;background:var(--espresso);color:white;padding:12px 19px;border-radius:999px;font-weight:700;border:1px solid var(--espresso);transition:.2s}
+    .btn:hover{background:var(--copper);color:#111;transform:translateY(-1px)}
+    .btn.secondary{background:transparent;color:var(--espresso);border-color:var(--copper)}
+    .hero{padding:72px 0 60px;background:radial-gradient(circle at 82% 28%,#e4e4e4 0,transparent 30%),linear-gradient(125deg,#f4f4f4,#ffffff 68%)}
+    .hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:44px;align-items:center}
+    .eyebrow{color:var(--copper);font-size:.78rem;font-weight:800;letter-spacing:.22em;text-transform:uppercase}
+    h1{font-size:clamp(2.7rem,6vw,5.3rem);line-height:.99;letter-spacing:-.055em;margin:16px 0 22px;max-width:650px}
+    h1 span{color:var(--copper)}
+    .lead{font-size:1.1rem;color:var(--muted);max-width:520px}
+    .actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}
+    .hero-art{min-height:390px;display:grid;place-items:center;position:relative}
+    .hero-product-img{display:block;width:100%;max-width:500px;max-height:540px;object-fit:contain;border-radius:18px;box-shadow:0 24px 60px #00000018}
+    .product-photo{width:100%;height:100%;max-height:220px;object-fit:contain;display:block}
+    .product-visual.photo{padding:0;background:#f2f2f2}
+    .halo{width:min(390px,90%);aspect-ratio:1;border-radius:50%;background:linear-gradient(145deg,#e7c9ae,#f8eee3 58%,#d5a17c);display:grid;place-items:center;box-shadow:0 25px 65px #6b422c20}
+    .tissue-box{width:72%;height:180px;background:linear-gradient(135deg,#fffdf8,#e7d7c6);border-radius:16px;box-shadow:0 24px 35px #6b422c28;transform:rotate(-7deg);display:flex;flex-direction:column;align-items:center;justify-content:center;border:1px solid #d9c6b4;position:relative}
+    .tissue-box:before{content:"";position:absolute;top:-30px;width:105px;height:50px;background:#fffdf8;border-radius:50% 50% 8px 8px;box-shadow:0 -3px 5px #6b422c12}
+    .tissue-box strong{font-size:clamp(1.5rem,3vw,2.5rem);letter-spacing:.12em;color:var(--mocha)}
+    .tissue-box small{letter-spacing:.25em;color:var(--copper);font-weight:800}
+    .art-note{position:absolute;bottom:8%;right:2%;background:#ffffff;padding:13px 17px;border:1px solid #D4AF37;border-radius:14px;box-shadow:0 10px 35px #30231d15;font-size:.85rem;font-weight:700}
+    section{padding:72px 0}
+    .section-head{text-align:center;max-width:660px;margin:0 auto 36px}
+    h2{font-size:clamp(2rem,4vw,3.1rem);line-height:1.1;letter-spacing:-.04em;margin:10px 0}
+    .section-head p,.muted{color:var(--muted)}
+    .products{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+    .product{border:1px solid var(--line);border-radius:22px;overflow:hidden;background:white;transition:.2s}
+    .product:hover{transform:translateY(-4px);box-shadow:0 18px 35px #30231d0d}
+    .product-visual{height:220px;background:linear-gradient(145deg,#e8e8e8,#ffffff);display:grid;place-items:center;padding:25px}
+    .pack{width:150px;height:125px;background:#fffdf8;border:1px solid #dfcbb9;border-radius:12px;box-shadow:0 16px 22px #6b422c20;display:flex;align-items:center;justify-content:center;flex-direction:column;transform:rotate(-5deg)}
+    .pack.round{border-radius:50%;width:150px;height:120px;transform:rotate(4deg)}
+    .pack strong{color:var(--mocha);font-size:1.2rem;letter-spacing:.1em}
+    .pack span{font-size:.62rem;color:var(--copper);font-weight:800;letter-spacing:.16em}
+    .product-copy{padding:20px}
+    .product-copy h3{margin:0 0 7px;font-size:1.2rem}
+    .product-copy p{color:var(--muted);font-size:.93rem;margin:0 0 18px}
+    .product-copy .btn{width:100%;font-size:.9rem;padding:10px}
+    .why{background:#111111;color:var(--cream)}
+    .why-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:26px;margin-top:35px}
+    .why-item{padding:24px;border:1px solid #ffffff22;border-radius:18px}
+    .why-item .num{font-size:1.7rem;color:var(--copper);font-weight:900}
+    .why-item h3{margin:8px 0}
+    .why-item p{color:#d6c9c0;margin:0}
+    .contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:38px;align-items:center}
+    .contact-card{background:#F0F0F0;padding:28px;border-radius:22px}
+    .contact-card label{display:block;font-weight:700;font-size:.9rem;margin:12px 0 5px}
+    input,select,textarea{width:100%;padding:12px 13px;border:1px solid #C0C0C0;border-radius:10px;background:#FFFFFF;font:inherit;color:var(--espresso)}
+    footer{background:#080808;color:#f7f7f7;border-top:2px solid #D4AF37;padding:28px 0}
+    .foot{display:flex;justify-content:space-between;gap:16px;align-items:center;flex-wrap:wrap}
+    .foot small{color:#cbb9ac}
+    .wa-float{position:fixed;bottom:18px;right:18px;z-index:8;background:#111111;color:#D4AF37;border:1px solid #D4AF37;border-radius:999px;padding:13px 17px;font-weight:800;box-shadow:0 8px 25px #0002}
+    @media(max-width:760px){
+      .links{gap:12px}.links a:not(.btn){display:none}
+      .hero{padding:48px 0 35px}.hero-grid,.contact-grid{grid-template-columns:1fr}
+      .hero-art{min-height:310px}.halo{width:300px}.tissue-box{height:150px}
+      section{padding:54px 0}.products,.why-grid{grid-template-columns:1fr}
+      .product-visual{height:190px}.actions .btn{flex:1}
+    }
+  </style>
+</head>
+<body>
+  <!-- Before publishing, replace 91XXXXXXXXXX below with your WhatsApp number including country code. -->
+  <header>
+    <div class="wrap nav">
+      <a class="brand" href="#home">
+  <img src="images/jsk-logo2.png" alt="JSK CLEAN Logo">
+</a>
+      <nav class="links" aria-label="Main navigation">
+        <a href="#products">Products</a><a href="#about">About</a><a href="#contact">Contact</a>
+        <a class="btn" href="#contact">Bulk Enquiry</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="wrap hero-grid">
+        <div>
+          <div class="eyebrow">Comfort in every sheet</div>
+          <h1>Small things.<br><span>Better everyday.</span></h1>
+          <p class="lead">Discover JSK CLEAN tissue essentials for homes, workplaces, hospitality and everyday moments. Contact us for product details and bulk orders.</p>
+          <div class="actions">
+            <a class="btn" href="#products">Explore Products</a>
+            <a class="btn secondary" href="#contact">Wholesale Enquiry ↗</a>
+          </div>
+        </div>
+        <div class="hero-art"><img class="hero-product-img" src="images/photo.png" alt="JSK CLEAN facial tissue pack with black and gold packaging"><div class="art-note">MAKING YOUR LIFE MORE HYGIENE</div></div>
+      </div>
+    </section>
+
+    <section id="products">
+      <div class="wrap">
+        <div class="section-head">
+          <div class="eyebrow">Our collection</div>
+          <h2>Everyday care, made simple.</h2>
+          <p>Explore our tissue range. Ask us about available sizes, packaging and wholesale pricing.</p>
+        </div>
+        <div class="products">
+          <article class="product">
+            <div class="product-visual photo"><img class="product-photo" src="images/photo2_1.png" alt="JSK CLEAN facial tissue pack">
+            <div class="product-copy"><h3>Facial Tissue</h3><p>Facial Tissue (4 ply). A handy everyday essential for home, office and hospitality use.</p><a class="btn" href="#" data-product="Facial Tissue">Enquire about this product</a></div>
+          </article>
+          <article class="product">
+            <div class="product-visual photo"><img class="product-photo" src="images/photobox.png" alt="JSK CLEAN facial tissue pack"></div>
+
+            <div class="product-copy"><h3>Box Tissue</h3><p>A neat, convenient option for desks, counters, bedrooms and guest areas.</p><a class="btn" href="#" data-product="Box Tissue">Enquire about this product</a></div>
+          </article>
+          <article class="product">
+<img class="product-photo" src="images/photokitchen.png" alt="JSK CLEAN facial tissue pack">
+            <div class="product-copy"><h3>Tissue Napkins</h3><p>Suitable for dining, events, cafés and day-to-day serving needs.</p><a class="btn" href="#" data-product="Tissue Napkins">Enquire about this product</a></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+<section class="why-jsk" id="why-us">
+  <div class="wrap">
+
+    <div class="section-head">
+      <div class="eyebrow">WHY JSK CLEAN</div>
+      <h2>Pure Comfort. Everyday Care.</h2>
+      <p>Thoughtfully selected tissue essentials for your everyday needs.</p>
+    </div>
+
+    <div class="quality-grid">
+
+      <!-- 01 Virgin Wood Pulp -->
+      <div class="quality-card">
+        <div class="quality-icon">
+          <svg viewBox="0 0 64 64" fill="none" stroke="currentColor"
+               stroke-width="2.2" stroke-linecap="round"
+               stroke-linejoin="round" aria-hidden="true">
+            <path d="M32 53V24"/>
+            <path d="M32 36C17 36 11 26 12 13c14 0 23 7 20 23Z"/>
+            <path d="M32 29C32 15 41 8 54 8c1 14-7 23-22 21Z"/>
+            <path d="M19 20l13 16M47 15L32 31"/>
+            <path d="M20 53h24"/>
+          </svg>
+        </div>
+        <div class="quality-content">
+          <span class="quality-number">01</span>
+          <h3>Virgin Wood Pulp</h3>
+          <p>Made with virgin wood pulp, as specified for the product.</p>
+        </div>
+      </div>
+
+      <!-- 02 Eco & Hypoallergenic -->
+      <div class="quality-card">
+        <div class="quality-icon">
+          <svg viewBox="0 0 64 64" fill="none" stroke="currentColor"
+               stroke-width="2.2" stroke-linecap="round"
+               stroke-linejoin="round" aria-hidden="true">
+            <path d="M32 54S10 43 10 25V13l22-7 22 7v12c0 18-22 29-22 29Z"/>
+            <path d="M20 31l8 8 16-17"/>
+            <path d="M32 13v5"/>
+          </svg>
+        </div>
+        <div class="quality-content">
+          <span class="quality-number">02</span>
+          <h3>Eco-Friendly & Hypoallergenic</h3>
+          <p>A mindful choice designed with comfort and care in mind.</p>
+        </div>
+      </div>
+
+      <!-- 03 Ultrasoft -->
+      <div class="quality-card">
+        <div class="quality-icon">
+          <svg viewBox="0 0 64 64" fill="none" stroke="currentColor"
+               stroke-width="2.2" stroke-linecap="round"
+               stroke-linejoin="round" aria-hidden="true">
+            <path d="M32 7l4.5 13.5L50 25l-13.5 4.5L32 43l-4.5-13.5L14 25l13.5-4.5L32 7Z"/>
+            <path d="M49 39l3 8 8 3-8 3-3 8-3-8-8-3 8-3 3-8Z"/>
+            <path d="M14 39l2 5 5 2-5 2-2 5-2-5-5-2 5-2 2-5Z"/>
+          </svg>
+        </div>
+        <div class="quality-content">
+          <span class="quality-number">03</span>
+          <h3>Ultrasoft Feel</h3>
+          <p>A soft-touch tissue experience for everyday use.</p>
+        </div>
+      </div>
+
+      <!-- 04 Strength & Absorbency -->
+      <div class="quality-card">
+        <div class="quality-icon">
+          <svg viewBox="0 0 64 64" fill="none" stroke="currentColor"
+               stroke-width="2.2" stroke-linecap="round"
+               stroke-linejoin="round" aria-hidden="true">
+            <path d="M32 7C25 18 16 28 16 38a16 16 0 0 0 32 0C48 28 39 18 32 7Z"/>
+            <path d="M24 40c1 6 5 9 10 10"/>
+            <path d="M9 15l5 5M55 15l-5 5M32 2v7"/>
+          </svg>
+        </div>
+        <div class="quality-content">
+          <span class="quality-number">04</span>
+          <h3>Strength & Absorbency</h3>
+          <p>Made for convenient, everyday tissue needs.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<style>
+.why-jsk {
+  background: #111111;
+  color: #FFFFFF;
+  padding: 75px 0;
+}
+
+.why-jsk .section-head {
+  text-align: center;
+  margin-bottom: 42px;
+}
+
+.why-jsk .eyebrow {
+  color: #D4AF37;
+  font-size: 14px;
+  font-weight: 800;
+  letter-spacing: 4px;
+  margin-bottom: 16px;
+}
+
+.why-jsk .section-head h2 {
+  color: #FFFFFF;
+  font-size: clamp(30px, 4vw, 54px);
+  font-weight: 800;
+  letter-spacing: -1.5px;
+  margin: 0 0 16px;
+}
+
+.why-jsk .section-head p {
+  color: #D0D0D0;
+  font-size: 18px;
+  margin: 0;
+}
+
+.quality-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 22px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.quality-card {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+  min-width: 0;
+  padding: 30px;
+  border: 1px solid #333333;
+  border-radius: 20px;
+  background: linear-gradient(145deg, #151515, #101010);
+  transition: border-color 0.3s, transform 0.3s;
+}
+
+.quality-card:hover {
+  border-color: #D4AF37;
+  transform: translateY(-4px);
+}
+
+.quality-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 76px;
+  height: 76px;
+  color: #D4AF37;
+  border: 1px solid #51451F;
+  border-radius: 18px;
+  background: #1C1A12;
+}
+
+.quality-icon svg {
+  width: 45px;
+  height: 45px;
+}
+
+.quality-content {
+  min-width: 0;
+}
+
+.quality-number {
+  display: block;
+  color: #D4AF37;
+  font-size: 25px;
+  font-weight: 800;
+  margin-bottom: 8px;
+}
+
+.quality-content h3 {
+  color: #FFFFFF;
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 1.35;
+  margin: 0 0 10px;
+}
+
+.quality-content p {
+  color: #D0D0D0;
+  font-size: 16px;
+  line-height: 1.7;
+  margin: 0;
+}
+
+@media (max-width: 650px) {
+  .why-jsk {
+    padding: 55px 0;
+  }
+
+  .quality-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .quality-card {
+    padding: 22px;
+    gap: 17px;
+  }
+
+  .quality-icon {
+    width: 62px;
+    height: 62px;
+  }
+
+  .quality-icon svg {
+    width: 37px;
+    height: 37px;
+  }
+
+  .quality-content h3 {
+    font-size: 18px;
+  }
+
+  .quality-content p {
+    font-size: 14px;
+  }
+}
+</style>
+
+
+   
+
+    <section id="contact">
+      <div class="wrap contact-grid">
+        <div>
+          <div class="eyebrow">Let's connect</div>
+          <h2>Looking for bulk pricing?</h2>
+          <p class="muted">Tell us what you need. This enquiry form opens WhatsApp with your message ready to send.</p>
+          <p><strong>Retailers · Offices · Hotels · Cafés · Distributors</strong></p>
+        </div>
+        <div class="contact-card">
+          <form id="enquiryForm">
+            <label for="name">Your name</label><input id="name" name="name" placeholder="Enter your name" required>
+            <label for="business">Business / company (optional)</label><input id="business" name="business" placeholder="Your business name">
+            <label for="product">Product</label>
+            <select id="product" name="product"><option>Facial Tissue</option><option>Box Tissue</option><option>Tissue Napkins</option><option>Other / Multiple products</option></select>
+            <label for="quantity">Estimated quantity</label><input id="quantity" name="quantity" placeholder="e.g. 100 boxes / cartons">
+            <label for="message">Message</label><textarea id="message" name="message" rows="3" placeholder="Tell us what you need"></textarea>
+
+            <button class="btn" type="submit" style="width:100%;margin-top:16px;cursor:pointer">Send Enquiry on WhatsApp</button>
+
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+  <div class="wrap foot">
+    <a class="brand" href="#home" style="color:#ffffff">
+      JSK CLEAN
+      <small style="color:#C0C0C0"></small>
+    </a>
+
+    <small>© <span id="year"></span> JSK CLEAN. All rights reserved.</small>
+
+    <div class="footer-details">
+      <div>JSK</div>
+      <div>Mktd by: JSK Fasteners, Peringala, Kochi-683565</div>
+      <div>Customer Care: 8111 8888 63</div>
+      <div>Email: info@jskindustries.com</div>
+      <div>Packing Reg: KRL/THI/M-19052/2024.</div>
+    </div>
+  </div>
+</footer>
+  <a class="wa-float" id="waFloat" href="#" aria-label="WhatsApp JSK CLEAN">WhatsApp ↗</a>
+
+  <script>
+    // IMPORTANT: Replace this sample number with your WhatsApp number, including country code, without + or spaces.
+    const WHATSAPP_NUMBER = "91XXXXXXXXXX";
+
+    function openWhatsApp(message) {
+      if (WHATSAPP_NUMBER.includes("9020338694")) {
+        alert("Please add your WhatsApp number in index.html first. Search for 9020338694 and replace it with your number.");
+        return;
+      }
+      window.open("https://wa.me/" + WHATSAPP_NUMBER + "?text=" + encodeURIComponent(message), "_blank", "noopener");
+    }
+
+    document.querySelectorAll("[data-product]").forEach(link => {
+      link.addEventListener("click", event => {
+        event.preventDefault();
+        openWhatsApp("Hello JSK CLEAN, I would like to enquire about " + link.dataset.product + ". Please share product details and wholesale pricing.");
+      });
+    });
+
+    document.getElementById("enquiryForm").addEventListener("submit", event => {
+      event.preventDefault();
+      const name = document.getElementById("name").value.trim();
+      const business = document.getElementById("business").value.trim();
+      const product = document.getElementById("product").value;
+      const quantity = document.getElementById("quantity").value.trim();
+      const message = document.getElementById("message").value.trim();
+      openWhatsApp("Hello JSK CLEAN,\nName: " + name + "\nBusiness: " + (business || "Not provided") + "\nProduct: " + product + "\nQuantity: " + (quantity || "Not specified") + "\nMessage: " + (message || "Please share more details."));
+    });
+
+    document.getElementById("waFloat").addEventListener("click", event => {
+      event.preventDefault();
+      openWhatsApp("Hello JSK CLEAN, I would like to know more about your tissue products.");
+    });
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
