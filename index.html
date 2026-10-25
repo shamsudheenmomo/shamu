@@ -448,40 +448,81 @@
 </footer>
   <a class="wa-float" id="waFloat" href="#" aria-label="WhatsApp JSK CLEAN">WhatsApp ↗</a>
 
-  <script>
-    // IMPORTANT: Replace this sample number with your WhatsApp number, including country code, without + or spaces.
-    const WHATSAPP_NUMBER = "9048772407";
+  
+<script>
+  // WhatsApp number with India country code (91), without + or spaces
+  const WHATSAPP_NUMBER = "919020338694";
 
-    function openWhatsApp(message) {
-      if (WHATSAPP_NUMBER.includes("9048772407")) {
-        alert("Please add your WhatsApp number in index.html first. Search for 9020xxxxxx and replace it with your number.");
-        return;
-      }
-      window.open("https://wa.me/" + WHATSAPP_NUMBER + "?text=" + encodeURIComponent(message), "_blank", "noopener");
+  function openWhatsApp(message) {
+    if (!WHATSAPP_NUMBER) {
+      alert("Please add your WhatsApp number in index.html first.");
+      return;
     }
 
-    document.querySelectorAll("[data-product]").forEach(link => {
-      link.addEventListener("click", event => {
-        event.preventDefault();
-        openWhatsApp("Hello JSK CLEAN, I would like to enquire about " + link.dataset.product + ". Please share product details and wholesale pricing.");
-      });
-    });
+    window.open(
+      "https://wa.me/" + WHATSAPP_NUMBER + "?text=" + encodeURIComponent(message),
+      "_blank",
+      "noopener"
+    );
+  }
 
-    document.getElementById("enquiryForm").addEventListener("submit", event => {
+  // Product enquiry buttons
+  document.querySelectorAll("[data-product]").forEach(link => {
+    link.addEventListener("click", event => {
       event.preventDefault();
+
+      openWhatsApp(
+        "Hello JSK CLEAN, I would like to enquire about " +
+        link.dataset.product +
+        ". Please share product details and wholesale pricing."
+      );
+    });
+  });
+
+  // Enquiry form
+  const enquiryForm = document.getElementById("enquiryForm");
+
+  if (enquiryForm) {
+    enquiryForm.addEventListener("submit", event => {
+      event.preventDefault();
+
       const name = document.getElementById("name").value.trim();
       const business = document.getElementById("business").value.trim();
       const product = document.getElementById("product").value;
       const quantity = document.getElementById("quantity").value.trim();
       const message = document.getElementById("message").value.trim();
-      openWhatsApp("Hello JSK CLEAN,\nName: " + name + "\nBusiness: " + (business || "Not provided") + "\nProduct: " + product + "\nQuantity: " + (quantity || "Not specified") + "\nMessage: " + (message || "Please share more details."));
-    });
 
-    document.getElementById("waFloat").addEventListener("click", event => {
-      event.preventDefault();
-      openWhatsApp("Hello JSK CLEAN, I would like to know more about your tissue products.");
+      openWhatsApp(
+        "Hello JSK CLEAN,\n" +
+        "Name: " + name + "\n" +
+        "Business: " + (business || "Not provided") + "\n" +
+        "Product: " + product + "\n" +
+        "Quantity: " + (quantity || "Not specified") + "\n" +
+        "Message: " + (message || "Please share more details.")
+      );
     });
-    document.getElementById("year").textContent = new Date().getFullYear();
-  </script>
+  }
+
+  // Floating WhatsApp button
+  const waFloat = document.getElementById("waFloat");
+
+  if (waFloat) {
+    waFloat.addEventListener("click", event => {
+      event.preventDefault();
+
+      openWhatsApp(
+        "Hello JSK CLEAN, I would like to know more about your tissue products."
+      );
+    });
+  }
+
+  // Automatic copyright year
+  const yearElement = document.getElementById("year");
+
+  if (yearElement) {
+    yearElement.textContent = new Date().getFullYear();
+  }
+</script>
+
 </body>
 </html>
