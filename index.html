@@ -451,20 +451,21 @@
   
 <script>
   // WhatsApp number with India country code (91), without + or spaces
+
   const WHATSAPP_NUMBER = "919048772407";
 
-  function openWhatsApp(message) {
-    if (!WHATSAPP_NUMBER) {
-      alert("Please add your WhatsApp number in index.html first.");
-      return;
-    }
+function openWhatsApp(message) {
+  const url =
+    "https://wa.me/" + WHATSAPP_NUMBER +
+    "?text=" + encodeURIComponent(message);
 
-    window.open(
+  window.open(
       "https://wa.me/" + WHATSAPP_NUMBER + "?text=" + encodeURIComponent(message),
       "_blank",
       "noopener"
     );
-  }
+}
+  
 
   // Product enquiry buttons
   document.querySelectorAll("[data-product]").forEach(link => {
